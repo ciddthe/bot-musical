@@ -14,7 +14,7 @@ let latestQR = null;
 let connected = false;
 
 const server = http.createServer(async (req, res) => {
-  const url = new URL(req.url, http://${req.headers.host});
+  const url = new URL(req.url, `http://${req.headers.host}`);
 
   if (url.pathname === "/") {
     res.writeHead(200, {
