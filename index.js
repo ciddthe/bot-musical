@@ -117,7 +117,7 @@ async function iniciarWhatsApp() {
         encodeURIComponent(song);
 
       await sock.sendMessage(chat, {
-        text: 🎵 Busqué: ${song}\n🔗 Resultados de YouTube:\n${searchURL}
+        text: `🎵 Busqué: ${song}\n🔗 Resultados de YouTube:\n${searchURL}`
       });
     }
   });
